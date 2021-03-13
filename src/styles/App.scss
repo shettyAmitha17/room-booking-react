@@ -1,0 +1,101 @@
+@import './custom-palette.scss';
+
+.room-component {
+  background: linear-gradient(to bottom, $clrWhite 0%, $lightBackground 100vh);
+   height: 100vh;
+  .app-list-items {
+    flex: 1 1 100%;
+    width: 100%;
+
+    .card {
+      background-color: $clrWhite;
+      box-shadow: 0 3px 10px 0 $shadowClr;
+      transition: box-shadow 0.25s cubic-bezier(0.32, 0.01, 0, 1);
+      margin: 0;
+      box-sizing: border-box;
+      flex-direction: column;
+
+      .list-item-image {
+        margin: 32px 30%;
+        width: 40%;
+        height: 90px;
+      }
+
+      .card-actions {
+        padding: 1em 0.8em;
+        @extend .layout-row;
+        @extend .align-items-center;
+
+        >div:first-child {
+
+          width: 80%;
+          >button:first-child{
+            background-color: $btnRemove;
+          }
+          >button:nth-child(3){
+            background-color: $btnAdd;
+          }
+        }
+
+        .quantity {
+          max-width: 24px;
+          font-size: 12px;
+          text-align: center;
+          padding: 0;
+          height: 28px;
+        }
+
+        button {
+          padding: 4px 20px;
+          color: $clrWhite;
+          border-radius: 50%;
+          font-size: 30px;
+          @extend .text-center;
+          @extend .align-items-center;
+          @extend .cursor-pointer;
+        }
+   
+      }
+
+
+    }
+  }
+  table {
+    margin-bottom: 12px;
+    width: 80%;
+  }
+  
+  table thead tr th:last-child {
+    padding-right: 30px;
+  }
+  
+  table th.numeric,
+  table td.numeric {
+    text-align: right;
+  }
+
+}
+
+
+
+.flex-100 {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+$lightBackground: #f3f7f7;
+$goBtnClrPrimary: deepskyBlue;
+$clrBlack: #000000;
+$clrWhite: #ffffff;
+$shadowClr: grey;
+$btnAdd: red;
+$btnRemove: blue;
+
+
+.layout-row {
+    display: flex;
+    flex-direction: row;
+}
+
+// text-alignments
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+.align-items-center {
+    align-items: center;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+[disabled] {
+    opacity: 0.4;
+    cursor: not-allowed !important;
+}
+
+.px-16 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.mr-25 {
+    margin-right: 25px !important;
+}
+
+.my-16 {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.ma-16 {
+    margin: 16px !important;
+}
+
+
+
+.pa-4 {
+    padding: 4px !important;
+}
+
+.ma-0 {
+    margin: 0px !important;
+}
+
+
+
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+// backgrounds
+%backrgound-elements {
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
