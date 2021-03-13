@@ -72,7 +72,7 @@ class App extends Component {
                             if (adults.selected === 0 || (adults.selected + selectedItem.selected) % 4 === 1) {
                                 adults.selected++
                             }
-                            if (room.selected !== 5 && (adults.selected + selectedItem.selected) > 0) {
+                            if (room.selected !== 5 && (adults.selected + selectedItem.selected) % 4 === 0) {
                                 room.selected++
                             }
                         } else {
