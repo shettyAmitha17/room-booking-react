@@ -36,14 +36,12 @@ class App extends Component {
                 if (identifier === 'remove') {
                     selectedItem.selected = items.selected - 1;
                 }
-                console.log(children.selected, 'children.selected')
 
                 switch (items.name) {
                     case 'room':
                         if (identifier === 'remove' && children.selected > 4) {
                             children.selected = children.selected - 3;
                             adults.selected = adults.selected - 1;
-                            console.log(children.selected, 'children.selected')
                         } else {
                             children.selected = 0;
                             adults.selected = selectedItem.selected * 4;
